@@ -114,6 +114,7 @@ int main() //função é adicionada parenteses
    printf("\t1-registrar nomes\n");
    printf("\t2-consultar nomes\n");
    printf("\t3-deletar nomes\n\n"); 
+   printf("\t4-sair do sistema");
    printf("\topção:\n\n"); 
   
  
@@ -132,6 +133,13 @@ system("cls");
 	case 3:
 	deletar();
     break;
+    case 4:
+    printf("obrigado por utilizar o sistema");
+	return 0;
+	break;
+    	
+    	
+    
     
     
     default:
