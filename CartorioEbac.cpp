@@ -101,53 +101,73 @@ int main() //função é adicionada parenteses
   
    int opcao=0;//definindo variaveis
    int laco=1;
-   for(laco=1;laco=1;)
+   char senhadigitada[10]="a";
+   int comparacao;
+   
+   printf("\tCartorio ebac");
+   printf("\tLogin de administrador\tDigite sua senha:");
+   scanf("%s", senhadigitada);
+   
+   comparacao = strcmp(senhadigitada, "admin");
+   
+   if(comparacao ==0)
    {
+    system ("cls");
    
-  setlocale (LC_ALL, "Portuguese");//incluindo linguagens
-
-  system("cls");   
+   for(laco=1;laco=1;)
    
-   printf("\t*Cartório da EBAC*\n\n");   //inicio do menu
-   printf("escolha a opção desejada do menu:\n\n");
-  //\T é um comando que ajuda a dar espaço
-   printf("\t1-registrar nomes\n");
-   printf("\t2-consultar nomes\n");
-   printf("\t3-deletar nomes\n\n"); 
-   printf("\t4-sair do sistema");
-   printf("\topção:\n\n"); 
+   
+   
+    {
+   
+     setlocale (LC_ALL, "Portuguese");//incluindo linguagens
+ 
+     system("cls");   
+   
+     printf("\t*Cartório da EBAC*\n\n");   //inicio do menu
+     printf("escolha a opção desejada do menu:\n\n");
+     //\T é um comando que ajuda a dar espaço
+     printf("\t1-registrar nomes\n");
+     printf("\t2-consultar nomes\n");
+     printf("\t3-deletar nomes\n\n");
+     printf("\t4-sair do programa"); 
+     printf("\topção:\n\n"); 
   
  
- scanf("%d",&opcao);//armazenando e escolha do usuario
+     scanf("%d",&opcao);//armazenando e escolha do usuario
  
-system("cls"); 
+     system("cls"); 
 
- switch(opcao)
-{
-	case 1:
-	registro();
-	break;
-	case 2:
-	consulta();
-	break;
-	case 3:
-	deletar();
-    break;
-    case 4:
-    printf("obrigado por utilizar o sistema");
-	return 0;
-	break;
+     switch(opcao)
+    {
+ 	 case 1:
+	 registro();
+	 break;
+	 case 2:
+	 consulta();
+	 break;
+	 case 3:
+	 deletar();
+     break;
+     case 4:
+     printf("obrgado por utilizar o sistema");
+	 return 0;
+     break;
+    
     	
     	
     
     
     
-    default:
+     default:
     		printf("\topção indisponivel");
-	system("pause");
-	break;
+ 	system("pause");
+ 	break;
 }
 }
+} 
+  else
+  printf("senha incerrta");
 }
 
 
